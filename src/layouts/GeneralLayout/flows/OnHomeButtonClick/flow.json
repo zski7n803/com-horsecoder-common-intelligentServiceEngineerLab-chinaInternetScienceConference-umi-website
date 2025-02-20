@@ -1,0 +1,21 @@
+{
+  "id":"@com.horsecoder.common.intelligentServiceEngineerLab.chinaInternetScienceConference.umi.website/generalLayout/FLOW_ON_HOME_BUTTON_CLICK",
+  "name":"FLOW_ON_HOME_BUTTON_CLICK",
+  "type":"flow",
+  "title":"首页按钮点击",
+  "params":[
+    { "title":"WEB状态更新", "name":"dispatch", "type":"Object", "notnull":true }
+  ],
+  "nodes":[
+    {
+      "id":"FLOW_NODE_ON_HOME_BUTTON_CLICK",
+      "type":"event",
+      "title":"首页按钮点击",
+      "reference":"GeneralLayout/OnHomeButtonClick/FLOW_CODE_ON_HOME_BUTTON_CLICK"
+    }
+  ],
+  "routes":[
+    { "source":"start", "target":"FLOW_NODE_ON_HOME_BUTTON_CLICK", "condition":"true" },
+    { "source":"FLOW_NODE_ON_HOME_BUTTON_CLICK", "target":"end", "condition":"true" }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "id":"@com.horsecoder.common.intelligentServiceEngineerLab.chinaInternetScienceConference.websiteInformation/FLOW_FILTER_WEBSITE_RICH_TEXT_LIST_BY_TYPE",
+  "name":"FLOW_FILTER_WEBSITE_RICH_TEXT_LIST_BY_TYPE",
+  "type":"flow",
+  "title":"按类型筛选网站富文本列表",
+  "params":[
+    { "title":"类型", "name":"type", "type":"String", "notnull":true },
+    { "title":"名称", "name":"name", "type":"String", "notnull":false }
+  ],
+  "results":[
+    { "title":"网站富文本列表", "name":"richTextListForWebsites", "type":"List(com.horsecoder.common.intelligentServiceEngineerLab.websiteInformation.model.sys.RichTextWebsite)", "notnull":true, "defaultValue":{} }
+  ],
+  "nodes":[
+    {
+      "id":"@com.horsecoder.common.intelligentServiceEngineerLab.chinaInternetScienceConference.websiteInformation/FLOW_NODE_FILTER_WEBSITE_RICH_TEXT_LIST_BY_TYPE",
+      "type":"event",
+      "title":"按类型筛选网站富文本列表",
+      "reference":"@com.horsecoder.common.intelligentServiceEngineerLab.chinaInternetScienceConference.websiteInformation/FLOW_CODE_FILTER_WEBSITE_RICH_TEXT_LIST_BY_TYPE",
+      "params":[
+        { "title":"类型", "name":"type", "type":"String", "notnull":true },
+        { "title":"名称", "name":"name", "type":"String", "notnull":false }
+      ],
+      "results":[
+        { "title":"网站富文本列表", "name":"richTextListForWebsites", "type":"List(com.horsecoder.common.intelligentServiceEngineerLab.websiteInformation.model.sys.RichTextWebsite)", "notnull":true, "defaultValue":{} }
+      ]
+    }
+  ],
+  "routes":[
+    { "source":"start", "target":"@com.horsecoder.common.intelligentServiceEngineerLab.chinaInternetScienceConference.websiteInformation/FLOW_NODE_FILTER_WEBSITE_RICH_TEXT_LIST_BY_TYPE", "condition":"true" },
+    { "source":"@com.horsecoder.common.intelligentServiceEngineerLab.chinaInternetScienceConference.websiteInformation/FLOW_NODE_FILTER_WEBSITE_RICH_TEXT_LIST_BY_TYPE", "target":"end", "condition":"true" }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id":"@com.horsecoder.common.intelligentServiceEngineerLab.chinaInternetScienceConference.umi.website/generalLayout/FLOW_ON_JUMP_HOMEPAGE",
+  "name":"FLOW_ON_JUMP_HOMEPAGE",
+  "type":"flow",
+  "title":"跳转到首页",
+  "params":[
+    { "title":"WEB状态更新", "name":"dispatch", "type":"Object", "notnull":true }
+  ],
+  "nodes":[
+    {
+      "id":"FLOW_NODE_ON_JUMP_HOMEPAGE",
+      "type":"event",
+      "title":"跳转到首页",
+      "reference":"GeneralLayout/OnJumpHomepage/FLOW_CODE_ON_JUMP_HOMEPAGE"
+    }
+  ],
+  "routes":[
+    { "source":"start", "target":"FLOW_NODE_ON_JUMP_HOMEPAGE", "condition":"true" },
+    { "source":"FLOW_NODE_ON_JUMP_HOMEPAGE", "target":"end", "condition":"true" }
+  ]
+}

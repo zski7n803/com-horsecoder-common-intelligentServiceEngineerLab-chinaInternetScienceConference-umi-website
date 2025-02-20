@@ -1,0 +1,51 @@
+{
+  "id":"@com.horsecoder.common.intelligentServiceEngineerLab.chinaInternetScienceConference.umi.website/websiteHomepage/FLOW_ON_INITIALIZE_RELATED_DOWNLOAD_LIST",
+  "name":"FLOW_ON_INITIALIZE_RELATED_DOWNLOAD_LIST",
+  "type":"flow",
+  "title":"初始化相关下载列表",
+  "params":[
+    { "title":"WEB状态更新", "name":"dispatch", "type":"Object", "notnull":true },
+    { "title":"页面设置器", "name":"setter", "type":"Object", "notnull":true }
+  ],
+  "nodes":[
+    {
+      "id":"FLOW_NODE_ON_INITIALIZE_RELATED_DOWNLOAD_LIST",
+      "type":"event",
+      "title":"初始化相关下载列表",
+      "reference":"WebsiteHomepage/OnInitializeRelatedDownloadList/FLOW_CODE_ON_INITIALIZE_RELATED_DOWNLOAD_LIST",
+      "results":[
+        { "title":"类型", "name":"type", "type":"String", "notnull":true },
+        { "title":"名称", "name":"name", "type":"String", "notnull":false }
+      ]
+    },
+    {
+      "id":"@com.horsecoder.common.intelligentServiceEngineerLab.chinaInternetScienceConference.websiteInformation/FLOW_FILTER_WEBSITE_RICH_TEXT_LIST_BY_TYPE",
+      "type":"flow",
+      "title":"按类型筛选网站富文本列表",
+      "reference":"@com.horsecoder.common.intelligentServiceEngineerLab.chinaInternetScienceConference.websiteInformation/FLOW_FILTER_WEBSITE_RICH_TEXT_LIST_BY_TYPE",
+      "params":[
+        { "title":"类型", "name":"type", "type":"String", "notnull":true },
+        { "title":"名称", "name":"name", "type":"String", "notnull":false }
+      ],
+      "results":[
+        { "title":"网站富文本列表", "name":"richTextListForWebsites", "type":"List(com.horsecoder.common.intelligentServiceEngineerLab.websiteInformation.model.sys.RichTextWebsite)", "notnull":true, "defaultValue":{} }
+      ]
+    },
+    {
+      "id":"FLOW_NODE_SET_RELATED_DOWNLOAD_LIST",
+      "type":"event",
+      "title":"设置数据:相关下载列表",
+      "reference":"WebsiteHomepage/OnInitializeRelatedDownloadList/FLOW_CODE_SET_RELATED_DOWNLOAD_LIST",
+      "params":[
+        { "title":"页面设置器", "name":"setter", "type":"Object", "notnull":true },
+        { "title":"网站富文本列表", "name":"richTextListForWebsites", "type":"List(com.horsecoder.common.intelligentServiceEngineerLab.websiteInformation.model.sys.RichTextWebsite)", "notnull":true, "defaultValue":{} }
+      ]
+    }
+  ],
+  "routes":[
+    { "source":"start", "target":"FLOW_NODE_ON_INITIALIZE_RELATED_DOWNLOAD_LIST", "condition":"true" },
+    { "source":"FLOW_NODE_SET_RELATED_DOWNLOAD_LIST", "target":"end", "condition":"true" },
+    { "source":"FLOW_NODE_ON_INITIALIZE_RELATED_DOWNLOAD_LIST", "target":"@com.horsecoder.common.intelligentServiceEngineerLab.chinaInternetScienceConference.websiteInformation/FLOW_FILTER_WEBSITE_RICH_TEXT_LIST_BY_TYPE", "condition":"true" },
+    { "source":"@com.horsecoder.common.intelligentServiceEngineerLab.chinaInternetScienceConference.websiteInformation/FLOW_FILTER_WEBSITE_RICH_TEXT_LIST_BY_TYPE", "target":"FLOW_NODE_SET_RELATED_DOWNLOAD_LIST", "condition":"true" }
+  ]
+}

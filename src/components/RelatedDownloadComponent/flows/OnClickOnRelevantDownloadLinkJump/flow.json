@@ -1,0 +1,21 @@
+{
+  "id":"@com.horsecoder.common.intelligentServiceEngineerLab.chinaInternetScienceConference.umi.website/relatedDownloadComponent/FLOW_ON_CLICK_ON_RELEVANT_DOWNLOAD_LINK_JUMP",
+  "name":"FLOW_ON_CLICK_ON_RELEVANT_DOWNLOAD_LINK_JUMP",
+  "type":"flow",
+  "title":"点击相关下载跳转",
+  "params":[
+    { "title":"WEB状态更新", "name":"dispatch", "type":"Object", "notnull":true }
+  ],
+  "nodes":[
+    {
+      "id":"FLOW_NODE_ON_CLICK_ON_RELEVANT_DOWNLOAD_LINK_JUMP",
+      "type":"event",
+      "title":"点击相关下载跳转",
+      "reference":"RelatedDownloadComponent/OnClickOnRelevantDownloadLinkJump/FLOW_CODE_ON_CLICK_ON_RELEVANT_DOWNLOAD_LINK_JUMP"
+    }
+  ],
+  "routes":[
+    { "source":"start", "target":"FLOW_NODE_ON_CLICK_ON_RELEVANT_DOWNLOAD_LINK_JUMP", "condition":"true" },
+    { "source":"FLOW_NODE_ON_CLICK_ON_RELEVANT_DOWNLOAD_LINK_JUMP", "target":"end", "condition":"true" }
+  ]
+}
