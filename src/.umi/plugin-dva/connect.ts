@@ -11,6 +11,7 @@ export * from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServic
 export * from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/models/RelatedDownloadComponent/reducer';
 export * from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/pages/ConferenceReport/models/reducer';
 export * from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/pages/ConferenceSubmission/models/reducer';
+export * from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/pages/ConferenceSubmissionSecond/models/reducer';
 export * from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/pages/HotelTransportation/models/reducer';
 export * from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/pages/ImportantDates/models/reducer';
 export * from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/pages/MeetingAgenda/models/reducer';

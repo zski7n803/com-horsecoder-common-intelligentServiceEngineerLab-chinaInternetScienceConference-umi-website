@@ -30,7 +30,7 @@ const MeetingAgendaPage: React.FC<MeetingAgendaProps> = () => {
                   <h2
                     className={styles.divDiv0Div0Div0Div0Div0H20}
                   >
-                    {`第二十一届中国网络科学论坛日程总览`}
+                    {`TBD`}
                   </h2>
                 </div>
               </div>

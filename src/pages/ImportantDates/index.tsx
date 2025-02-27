@@ -21,7 +21,7 @@ const ImportantDatesPage: React.FC<ImportantDatesProps> = () => {
             <h2
               className={styles.divDiv0Div0H20}
             >
-              {`重要日期`}
+              {`TBD`}
             </h2>
             <div
               className={styles.divDiv0Div0Div1}

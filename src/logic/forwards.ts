@@ -34,7 +34,9 @@ export const forwardMeetingRegistration = (params?: { query?: Query, state?: Sta
 export const forwardConferenceSubmission = (params?: { query?: Query, state?: State }) => {
   history.push({ pathname: "/conference/submission", ...params});
 };
-
+export const forwardConferenceSubmissionSecond = (params?: { query?: Query, state?: State }) => {
+  history.push({ pathname: "/conference/second-submission", ...params});
+};
 export const forwardMeetingAgenda = (params?: { query?: Query, state?: State }) => {
   history.push({ pathname: "/meeting/agenda", ...params});
 };

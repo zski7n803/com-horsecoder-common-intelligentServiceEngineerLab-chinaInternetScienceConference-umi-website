@@ -60,6 +60,12 @@ export function getRoutes() {
         "exact": true
       },
       {
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__ConferenceSubmissionSecond__wrapper' */'@/pages/ConferenceSubmissionSecond/wrapper'), loading: LoadingComponent}),
+        "name": "conference.second-submission",
+        "path": "/conference/second-submission",
+        "exact": true
+      },
+      {
         "component": dynamic({ loader: () => import(/* webpackChunkName: 'p__MeetingAgenda__wrapper' */'@/pages/MeetingAgenda/wrapper'), loading: LoadingComponent}),
         "name": "meeting.agenda",
         "path": "/meeting/agenda",

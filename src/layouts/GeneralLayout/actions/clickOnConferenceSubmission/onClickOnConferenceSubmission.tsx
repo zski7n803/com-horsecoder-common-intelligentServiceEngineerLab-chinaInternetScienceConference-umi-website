@@ -1,4 +1,4 @@
-import { forwardConferenceSubmission } from '@/logic/forwards';
+import { forwardConferenceSubmissionSecond} from '@/logic/forwards';
 import React from 'react';
 import type { Dispatch } from 'umi';
 
@@ -15,7 +15,7 @@ export const onClickOnConferenceSubmission = async (
    * 可以删除或者注释
    * 不可编辑后直接使用
    */
-  forwardConferenceSubmission();
+  forwardConferenceSubmissionSecond();
   /*
    * end
    */

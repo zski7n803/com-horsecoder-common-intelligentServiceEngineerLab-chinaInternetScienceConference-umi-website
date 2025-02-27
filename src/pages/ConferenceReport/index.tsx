@@ -18,7 +18,7 @@ const ConferenceReportPage: React.FC<ConferenceReportProps> = () => {
           <h2
             className={styles.divDiv0H20}
           >
-            {`大会报告`}
+            {`TBD`}
           </h2>
         </div>
       </div>

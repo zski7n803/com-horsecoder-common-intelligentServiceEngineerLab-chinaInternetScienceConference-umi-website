@@ -18,7 +18,7 @@ const MeetingNoticePage: React.FC<MeetingNoticeProps> = () => {
           <h2
             className={styles.divDiv0H20}
           >
-            {`会议须知`}
+            {`TBD`}
           </h2>
         </div>
         <div

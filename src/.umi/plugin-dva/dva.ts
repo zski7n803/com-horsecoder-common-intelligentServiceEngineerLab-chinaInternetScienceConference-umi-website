@@ -10,14 +10,15 @@ import ModelReducer1 from '/Users/zski7n803/javapros/com-horsecoder-common-intel
 import ModelReducer2 from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/models/RelatedDownloadComponent/reducer.tsx';
 import ModelReducer3 from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/pages/ConferenceReport/models/reducer.tsx';
 import ModelReducer4 from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/pages/ConferenceSubmission/models/reducer.tsx';
-import ModelReducer5 from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/pages/HotelTransportation/models/reducer.tsx';
-import ModelReducer6 from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/pages/ImportantDates/models/reducer.tsx';
-import ModelReducer7 from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/pages/MeetingAgenda/models/reducer.tsx';
-import ModelReducer8 from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/pages/MeetingNotice/models/reducer.tsx';
-import ModelReducer9 from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/pages/MeetingRegistration/models/reducer.tsx';
-import ModelReducer10 from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/pages/OrganizeStructure/models/reducer.tsx';
-import ModelReducer11 from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/pages/RichTextDisplay/models/reducer.tsx';
-import ModelReducer12 from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/pages/WebsiteHomepage/models/reducer.tsx';
+import ModelReducer5 from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/pages/ConferenceSubmissionSecond/models/reducer.tsx';
+import ModelReducer6 from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/pages/HotelTransportation/models/reducer.tsx';
+import ModelReducer7 from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/pages/ImportantDates/models/reducer.tsx';
+import ModelReducer8 from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/pages/MeetingAgenda/models/reducer.tsx';
+import ModelReducer9 from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/pages/MeetingNotice/models/reducer.tsx';
+import ModelReducer10 from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/pages/MeetingRegistration/models/reducer.tsx';
+import ModelReducer11 from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/pages/OrganizeStructure/models/reducer.tsx';
+import ModelReducer12 from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/pages/RichTextDisplay/models/reducer.tsx';
+import ModelReducer13 from '/Users/zski7n803/javapros/com-horsecoder-common-intelligentServiceEngineerLab-chinaInternetScienceConference-umi-website/src/pages/WebsiteHomepage/models/reducer.tsx';
 
 let app:any = null;
 
@@ -53,6 +54,7 @@ app.model({ namespace: 'reducer', ...ModelReducer9 });
 app.model({ namespace: 'reducer', ...ModelReducer10 });
 app.model({ namespace: 'reducer', ...ModelReducer11 });
 app.model({ namespace: 'reducer', ...ModelReducer12 });
+app.model({ namespace: 'reducer', ...ModelReducer13 });
   return app;
 }
 

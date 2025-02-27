@@ -21,7 +21,7 @@ const MeetingRegistrationPage: React.FC<MeetingRegistrationProps> = () => {
             <h2
               className={styles.divDiv0Div0H20}
             >
-              {`会议注册`}
+              {`TBD`}
             </h2>
             <div
               className={styles.divDiv0Div0Div1}

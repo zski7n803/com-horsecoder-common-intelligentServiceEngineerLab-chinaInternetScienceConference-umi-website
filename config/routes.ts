@@ -43,6 +43,11 @@
   				'name':'conference.submission',
   				'path':'/conference/submission'
   			},
+        {
+          'component':'@/pages/ConferenceSubmissionSecond/wrapper',
+          'name':'conference.second-submission',
+          'path':'/conference/second-submission'
+        },
   			{
   				'component':'@/pages/MeetingAgenda/wrapper',
   				'name':'meeting.agenda',
