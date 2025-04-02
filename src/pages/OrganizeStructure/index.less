@@ -1,9 +1,9 @@
-
+@media (min-width: 768px) {
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 20px;
+            padding: 0px;
             background-color: #f9f9f9;
             color: black;
         }
@@ -14,7 +14,6 @@
             text-align: center;
             margin-bottom: 20px;
             font-size: 32px;
-            margin-top: 20px;
         }
         h2 {
             padding-bottom: 0;
@@ -32,11 +31,11 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 100%;
             margin: 0 auto;
             background: #fff;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 1140px;
         }
         .section {
             margin-bottom: 30px;
@@ -71,6 +70,7 @@
         }
 
         .bigger_h2{
+            margin-top: 2rem;
             font-size: 24px;
             font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
         }
@@ -107,3 +107,120 @@
             font-family: 'KaiTi', '楷体', '楷体_GB2312', sans-serif;
             font-size: 18px;
         }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0.2rem;
+        background-color: #f9f9f9;
+        color: black;
+    }
+    h1, h2, h3 {
+        color: black;
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 0;
+        font-size: 1.4rem;
+    }
+    h2 {
+        padding-bottom: 0;
+        margin-top: 0;
+        font-size: 1rem;
+        font-family: 'KaiTi', '楷体', '楷体_GB2312', sans-serif;
+    }
+
+    .date_location {
+        text-align: center;
+    }
+    .date_location li{
+        font-family: 'KaiTi', '楷体', '楷体_GB2312', sans-serif;
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        background: #fff;
+        padding: 1.4rem;
+    }
+    .section {
+        margin-bottom: 0px;
+    }
+    .section p{
+        text-indent: 2em;
+    }
+    .section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    .huanhang_ul{
+        text-indent: 2em;
+    }
+    .flex_container{
+        text-indent: 2em;
+    }
+    .section ul li {
+        margin-bottom: 0px;
+    }
+    .section ul li strong {
+        display: block;
+        font-size: 1.1em;
+        margin-bottom: 5px;
+    }
+    .section ul li ul {
+        margin-top: 5px;
+        margin-left: 0;
+    }
+    .section ul li ul li {
+        margin-bottom: 0px;
+    }
+
+    .bigger_h2{
+        margin-top: 2rem;
+        font-size: 1.3rem;
+        font-family: 'Microsoft YaHei', '微软雅黑', sans-serif;
+    }
+
+    p{
+    }
+
+    .section p{
+        font-family: 'KaiTi', '楷体', '楷体_GB2312', sans-serif;
+        font-size: 18px;
+    }
+
+    .no_huanhang_ul{
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .flex_container {
+        display: flex;
+        flex-wrap: wrap; /* 允许换行 */
+        list-style: none; /* 移除默认的列表符号 */
+        padding: 0; /* 移除默认的内边距 */
+        margin: 0; /* 移除默认的外边距 */
+        }
+
+        .flex_container li {
+        flex-basis: 100%; /* 每个 <li> 占 50% 宽度，实现两两一行 */
+        box-sizing: border-box; /* 确保 padding 和 border 不超出宽度 */
+        padding: 0; /* 可选：添加内边距 */
+        }
+
+    li{
+        font-family: 'KaiTi', '楷体', '楷体_GB2312', sans-serif;
+        font-size: 18px;
+    }
+}

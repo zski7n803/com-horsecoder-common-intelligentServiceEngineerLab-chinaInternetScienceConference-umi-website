@@ -14,7 +14,7 @@ const OrganizeStructurePage: React.FC<OrganizeStructureProps> = () => {
 
         <h1>第二十一届网络科学与工程论坛</h1>
         <h2>The 21th Networks Science & Technology Forum in 2025</h2>
-        <p><strong>2025 年 4 月 18 日 - 20 日 中国·武汉</strong></p>
+        <p>2025 年 4 月 18 日 - 20 日 中国·武汉</p>
 
         <div className={styles.section}>
             <h2>主办单位</h2>

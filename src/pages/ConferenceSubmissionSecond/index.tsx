@@ -31,16 +31,16 @@ const ConferenceSubmissionSecondPage: React.FC<ConferenceSubmissionSecondProps> 
                   <div
                     className={styles.divDiv0Div0Div0Div0Div0Div0}
                   >
-                    <h2
+                    <h1
                       className={styles.divDiv0Div0Div0Div0Div0Div0H20}
                     >
                       {`网络科学与工程论坛征稿通知`}
-                    </h2>
-                    <h3
+                    </h1>
+                    <h2
                       className={styles.divDiv0Div0Div0Div0Div0Div0H31}
                     >
                       {`(第二轮)`}
-                    </h3>
+                    </h2>
                   </div>
                   <div
                     className={styles.divDiv0Div0Div0Div0Div0Div1}
@@ -55,11 +55,11 @@ const ConferenceSubmissionSecondPage: React.FC<ConferenceSubmissionSecondProps> 
                     >
                       {`　　本次论坛旨在为复杂网络与复杂系统及其相关领域的学者与技术人员提供一个学术交流平台，展示网络科学与工程最新理论与技术成果。感谢各位同行对网络科学与工程论坛的支持！本次论坛将采取大会报告和分组报告的形式进行交流。现将会议的有关事项通知如下：`}
                     </p>
-                    <h3
-                      className={styles.divDiv0Div0Div0Div0Div0Div1H32}
+                    <h2
+                      className={styles.bigger_h2}
                     >
                       {`一、会议主题包括（不限于）：`}
-                    </h3>
+                    </h2>
                     <p
                       className={styles.divDiv0Div0Div0Div0Div0Div1P3}
                     >
@@ -68,7 +68,7 @@ const ConferenceSubmissionSecondPage: React.FC<ConferenceSubmissionSecondProps> 
                       3. 复杂网络上的动力学：同步、传播、博弈等；<br/>
                       4. 社会、经济、技术网络等网络分析；<br/>
                       5. 生物网络、系统生物学、生物动力系统等；<br/>
-                      6. 分数阶网络、高阶网络与动力学分析；
+                      6. 分数阶网络、高阶网络与动力学分析；<br/>
                       7. 群体智能与人类行为动力学；<br/>
                       8. 多智能体系统与具身智能；<br/>
                       9. 网络安全基础理论及应用；<br/>
@@ -76,18 +76,18 @@ const ConferenceSubmissionSecondPage: React.FC<ConferenceSubmissionSecondProps> 
                       11. 复杂网络应用：链路预测与推荐算法、交通、路由等；<br/>
                       12. 复杂系统与人工智能以及其他学科的交叉研究等。
                     </p>
-                    <h3
-                      className={styles.divDiv0Div0Div0Div0Div0Div1H34}
+                    <h2
+                      className={styles.bigger_h2}
                     >
                       {`二、会议投稿`}
-                    </h3>
+                    </h2>
                     <p
                       className={styles.divDiv0Div0Div0Div0Div0Div1P5}
                     >
                       1. 请作者在2025年3月1日前通过
                       <a href={"https://s.csiam.org.cn"}
                          style={{color: "blue"}}>中国工业与应用数学学会投稿系统(https://s.csiam.org.cn)</a>
-                      ，选择<b>CNetSci 2025作者工作区</b>直接投稿，提交论文摘要和PDF文件（准备好您的论文题目和摘要和论文PDF文件（包括长摘要），报告人的姓名、单位、联系信息）。
+                      ，选择<b>CNetSci 2025作者工作区</b>直接投稿，提交论文摘要和PDF文件（准备好您的论文题目和摘要和论文PDF文件（包括长摘要），报告人的姓名、单位、联系信息），文件中需要包含报告人的姓名、单位、联系信息等，论坛所有交流报告内容不会正式出版，作者仍可以公开发表论文。
                     </p>
                     <p
                       className={styles.divDiv0Div0Div0Div0Div0Div1P6}
@@ -97,7 +97,7 @@ const ConferenceSubmissionSecondPage: React.FC<ConferenceSubmissionSecondProps> 
                     <p
                       className={styles.divDiv0Div0Div0Div0Div0Div1P7}
                     >
-                      登录后即可进行会议论文投稿:<br/>
+                      <span className={styles.dl}>登录后即可进行会议论文投稿:</span><br/>
                       （1）准备好您的论文题目和摘要，报告人的姓名、单位、联系信息；<br/>
                       （2）选择一个您要提交的论文语种；<br/>
                       （3）确定所属方向；<br/>
@@ -109,11 +109,11 @@ const ConferenceSubmissionSecondPage: React.FC<ConferenceSubmissionSecondProps> 
                       每篇成功提交的论文大会都会分配唯一的论文编号（论文 ID），当您在会务邮箱（<a
                       style={{color: "blue"}}>cnetsci2025@163.com</a>）联系我们时请指明您的论文编号。
                     </p>
-                    <h3
-                      className={styles.divDiv0Div0Div0Div0Div0Div1H39}
+                    <h2
+                      className={styles.bigger_h2}
                     >
                       {`三、注册方式`}
-                    </h3>
+                    </h2>
                     <p
                       className={styles.divDiv0Div0Div0Div0Div0Div1P10}
                     >
@@ -125,9 +125,12 @@ const ConferenceSubmissionSecondPage: React.FC<ConferenceSubmissionSecondProps> 
                     <p
                       className={styles.divDiv0Div0Div0Div0Div0Div1P11}
                     >
-                      1. 论文作者提交论文摘要后，即可在系统内进行注册交费。<br/>
-                      2. 没有论文的参会者，也需在系统内注册交费。<br/>
-                      3. 会议注册费收费标准:<br/>
+                      <div className={styles.sfbz}>
+                        1. 论文作者提交论文摘要后，即可在系统内进行注册交费。<br/></div>
+                      <div className={styles.sfbz}>
+                        2. 没有论文的参会者，也需在系统内注册交费。<br/></div>
+                      <div className={styles.sfbz}>3. 会议注册费收费标准:<br/>
+                      </div>
                       <table>
                         <tbody>
                         <tr>
@@ -197,23 +200,23 @@ const ConferenceSubmissionSecondPage: React.FC<ConferenceSubmissionSecondProps> 
                       <b><u>特别提示</u></b>：由于支付宝对公转账不显示汇款人及附言等信息，请勿用支付宝对公转账。汇款前务必在系统完成注册，提交单位名称、税号，以便开票，多位参会代表批量汇款请联系会务组说明开票的详细需求。
                     </p>
                     <p className={styles.payway}>③ 现场交费：会议报到时缴费，可使用微信、支付宝或刷卡。</p>
-                    <h3
-                      className={styles.divDiv0Div0Div0Div0Div0Div1H314}
+                    <h2
+                      className={styles.bigger_h2}
                     >
                       {`四、重要时间节点`}
-                    </h3>
+                    </h2>
                     <p
                       className={styles.divDiv0Div0Div0Div0Div0Div1P15}
                     >
-                      <b>会议报告投稿提交截止日期：<u><a style={{color: "red"}}> 2025 年 3 月 1 日 24 : 00</a></u><br/>
+                      <b>会议报告投稿提交截止日期：<u><a style={{color: "red"}}> 2025 年 3 月 10 日 24 : 00</a></u><br/>
                         报告接受以及参会通知日期：<u><a style={{color: "red"}}> 2025 年 3 月 23 日 24 : 00</a></u><br/>
                         会议在线注册缴费截止日期：<u><a style={{color: "red"}}> 2025 年 4 月 5 日 24 : 00</a></u><br/></b>
                     </p>
-                    <h3
-                      className={styles.divDiv0Div0Div0Div0Div0Div1H316}
+                    <h2
+                      className={styles.bigger_h2}
                     >
                       {`五、会务组联系方式`}
-                    </h3>
+                    </h2>
                     <p
                       className={styles.divDiv0Div0Div0Div0Div0Div1P17}
                     >

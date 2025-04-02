@@ -21,16 +21,15 @@ const ImportantDatesPage: React.FC<ImportantDatesProps> = () => {
             <h2
               className={styles.divDiv0Div0H20}
             >
-              {`TBD`}
+              {`重要日期`}
             </h2>
-            <div
-              className={styles.divDiv0Div0Div1}
+            <p
+              className={styles.divDiv0Div0Div0Div0Div0Div1P15}
             >
-              <p
-                className={styles.divDiv0Div0Div1P0}
-                content=""
-              />
-            </div>
+              <b>会议报告投稿提交截止日期：<u><a style={{color: "red"}}> 2025 年 3 月 10 日 24 : 00</a></u><br/>
+                报告接受以及参会通知日期：<u><a style={{color: "red"}}> 2025 年 3 月 23 日 24 : 00</a></u><br/>
+                会议在线注册缴费截止日期：<u><a style={{color: "red"}}> 2025 年 4 月 5 日 24 : 00</a></u><br/></b>
+            </p>
           </div>
         </div>
       </div>

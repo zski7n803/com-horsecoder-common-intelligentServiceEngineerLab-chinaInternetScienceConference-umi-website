@@ -1,0 +1,428 @@
+@media (min-width: 768px) {
+  /* 容器样式 */
+  .div {
+    width: 100%; /* 固定宽度为1200px，适应网页端设计 */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    margin: 0 auto; /* 居中显示 */
+  }
+
+  /* divDiv0: 顶部区域 */
+  .divDiv0 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 121, 124);
+    width: 100%;
+    height: 100px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  /* divDiv0Img0: 顶部图片 */
+  .divDiv0Img0 {
+    width: 200px;
+    height: 60px;
+    object-fit: contain;
+  }
+
+  .header_title {
+    display: none;
+  }
+
+  .navDiv {
+    width: auto;
+    display: flex;
+    margin-right: 30px;
+  }
+
+  .navDiv2 {
+    display: none;
+  }
+
+  /* 导航链接 */
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px; /* 使用 gap 替代 margin-left */
+  }
+
+  /* 导航链接样式 */
+  .nav-link {
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+    font-size: 22px;
+    letter-spacing: 0;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+  }
+
+  /* 点击文本样式 */
+  .clickOnHomepageTag, 
+  .clickOnHomepage, 
+  .clickOnConferenceReport, 
+  .clickOnMeetingNotice, 
+  .clickOnMeetingAgenda, 
+  .clickOnConferenceSubmission, 
+  .clickOnMeetingRegistration, 
+  .clickOnImportantDates, 
+  .clickOnHotelTransportation {
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+    font-size: 24px;
+    letter-spacing: 0;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+    margin-left: 40px;
+    white-space: nowrap; /* 防止文字换行 */
+  }
+
+  /* divDiv1: 图片区域 */
+  .divDiv1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+
+  /* divDiv1Img0: 图片 */
+  .divDiv1Img0 {
+    width: 100%;
+    height: auto; /* 高度自适应 */
+  }
+
+
+
+
+  /* 页脚样式 */
+  .footer {
+    background-color: rgb(0, 121, 124);
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: 20px;
+    padding: 20px 0;
+  }
+
+  .footer_left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer_title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .footer_subtitle {
+    font-size: 16px;
+    color: white;
+  }
+
+  .footer_middle {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .qr_code {
+    width: 120px;
+    height: auto;
+  }
+
+  .footer_divider {
+    width: 1px;
+    height: 120px;
+    background-color: white;
+  }
+
+  .footer_right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact_us {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .footer_bottom {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px 0;
+    border-top: 1px solid rgb(0, 121, 124);
+  }
+
+  .footer_contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    text-align: left;
+  }
+
+  .contact_item {
+    font-size: 16px;
+    color: white;
+  }
+
+  .contact_item span {
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .footer_right_up span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .footer2 {
+    display: none;
+  }
+
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  /* 容器样式 */
+  .div {
+    width: 100%; /* 固定宽度为1200px，适应网页端设计 */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    margin: 0 auto; /* 居中显示 */
+  }
+
+  /* divDiv0: 顶部区域 */
+  .divDiv0 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 121, 124);
+    width: 100%;
+    height: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+  }
+
+  /* divDiv0Img0: 顶部图片 */
+  .divDiv0Img0 {
+    width: 8rem;
+    height: 4rem;
+    object-fit: contain;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header_left {
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    display: none;
+  }
+  
+  .header_title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  .header_subtitle {
+    font-size: 0.5rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  .navDiv {
+    display: none;
+  }
+
+  .navDiv2 {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap; /* 防止子元素换行 */
+    -webkit-overflow-scrolling: touch; /* 使滚动更流畅 */
+  }
+
+  .navDiv22 {
+    display: inline-block;
+  }
+
+  /* 点击文本样式 */
+  .clickOnHomepageTag, 
+  .clickOnHomepage, 
+  .clickOnConferenceReport, 
+  .clickOnMeetingNotice, 
+  .clickOnMeetingAgenda, 
+  .clickOnConferenceSubmission, 
+  .clickOnMeetingRegistration, 
+  .clickOnImportantDates, 
+  .clickOnHotelTransportation {
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 10px; /* 添加左右间距 */
+    white-space: nowrap; /* 防止文字换行 */
+    display: inline-block;
+  }
+
+  /* divDiv1: 图片区域 */
+  .divDiv1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+  }
+
+  /* divDiv1Img0: 图片 */
+  .divDiv1Img0 {
+    width: 100%;
+    height: auto; /* 高度自适应 */
+    margin-top: 0.2rem;
+  }
+
+
+
+
+  /* 页脚样式 */
+
+  .footer {
+    display: none;
+  }
+
+  .footer2 {
+    background-color: rgb(0, 121, 124);
+    color: #fff;
+    padding: 0px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .footer2_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px;
+  }
+
+  .footer2_left {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer2_title {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .footer2_subtitle {
+    font-size: 0.67rem;
+    color: white;
+  }
+
+  .footer2_bottom {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer2_middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .qr2_code {
+    width: 5rem;
+    height: auto;
+  }
+
+  .qr2_code_text{
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+  }
+
+  .footer2_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1rem;
+  }
+
+  .contact2_us {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .footer2_bottom {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    border-top: 1px solid rgb(0, 121, 124);
+  }
+
+  .footer2_contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    text-align: left;
+  }
+
+  .contact2_item {
+    font-size: 0.7rem;
+    color: #fff;
+  }
+
+  .contact2_item span {
+    font-weight: bold;
+    color: #fff;
+  }
+
+  .footer2_right_up span {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+}

@@ -24,42 +24,42 @@ const WebsiteHomepagePage: React.FC<WebsiteHomepageProps> = (props) => {
             className={styles.divDiv0Div0}
           >
             <div
-              className={styles.divDiv0Div0Div0}
+              className={styles.divDiv0Div1Div0}
             >
+
               <div
-                className={styles.divDiv0Div0Div0Div0}
+                className={styles.divDiv0Div1Div0Div0}
               >
+                <img
+                  className={styles.divDiv0Div1Div0Div0Img0}
+                  src={notice}
+                  alt=""
+                />
                 <div
-                  className={styles.divDiv0Div0Div0Div0Div0}
-                >
-                  <img
-                    className={styles.divDiv0Div0Div0Div0Div0Img0}
-                    src={notice}
-                    alt=""
-                  />
-                </div>
-                <div
-                  className={styles.divDiv0Div0Div0Div0Div1}
+                  className={styles.divDiv0Div1Div0Div0Div1}
                 >
                   <h2
-                    className={styles.divDiv0Div0Div0Div0Div1H20}
+                    className={styles.divDiv0Div1Div0Div0Div1H20}
                   >
                     {`会议通知`}
                   </h2>
                 </div>
               </div>
+
               <div
-                className={styles.divDiv0Div0Div0Div1}
+                className={styles.divDiv0Div1Div0Div1}
               >
-                { props.meetingNotificationList.map((entity, index) => (<MeetingNotificationComponentWrapper
+                {props.meetingNotificationList.map((entity, index) => (<MeetingNotificationComponentWrapper
                   entity={entity}
                   index={index}
                 />))}
               </div>
+
             </div>
           </div>
+
           <div
-            className={styles.divDiv0Div1}
+            className={styles.divDiv0Div0}
           >
             <div
               className={styles.divDiv0Div1Div0}
